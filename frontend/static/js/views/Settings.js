@@ -3,17 +3,17 @@ import AbstractView from './AbstractView.js';
 export default class extends AbstractView {
     constructor(params) {
         super(params);
-        this.setTitle("Dashboard");
+        this.setTitle("Settings");
     }
 
     async getHtml() {
         return `
-        <h1>Welcome back, Juslin</h1>
+        <h1>Parametres</h1>
         <p>
-            Faites comme chez vous ici.
+            Contactez l'administrateur pour toutes modifications liees a votre compte
         </p>
         <p>
-            <a href="/posts" data-link>Voir les posts recemment ajoutés.</a>.
+            <a href="/" data-link>Retour</a>.
         </p>
         `;
     }
